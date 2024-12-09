@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home } from "./components/pages/home";
-import { Layout } from "./components/pages/layout";
-import { Legends } from "./components/pages/legends";
-import { Cooking } from "./components/pages/cooking";
-import { Tourism } from "./components/pages/tourism";
-import { NoPage } from "./components/pages/nopage";
+
+import { Home } from "./pages/home/Home";
+import { Layout } from "./pages/layout/Layout";
+import { Legends } from "./pages/legends/Legends";
+import { Cooking } from "./pages/cooking/Cooking";
+import { Tourism } from "./pages/tourism/Tourism";
 
 export function App() {
   return (
@@ -15,7 +15,6 @@ export function App() {
           <Route path="lendas" element={<Legends />} />
           <Route path="culinaria" element={<Cooking />} />
           <Route path="turismo" element={<Tourism />} />
-          <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
